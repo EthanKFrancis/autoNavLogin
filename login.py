@@ -1,9 +1,9 @@
 import webbrowser
 import sys
-import time
+import datetime
 
 def main():
-  print('Opening Favorite Sites')
+  print('Opening Websites')
 
   sites = "websites.txt"
   browser = "google-chrome"
