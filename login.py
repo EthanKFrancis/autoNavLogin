@@ -22,6 +22,8 @@ def main():
 
  
   wbbrowser = webbrowser.get(browser)
+  browse = webdriver.Chrome()
+  
 
   if len(sys.argv) >= 2:
     sites = sys.argv[1].lower()
@@ -34,10 +36,11 @@ def main():
   with open(sites) as fobj:
     try:
       for num, url in enumerate(fobj):
-        wbbrowser.open_new(url)
-        sleep(1)
+        wbbrowser.open_new_tab(url)
+        sleep(0)
     except Exception as e:
       print(e)
 
 if __name__ == '__main__': main()
+
 
