@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-#wmctrl -c chrome
-#kill $(ps aux | grep "chrome") 
-pkill --oldest --signal TERM -f chrome 
+killall wmctrl -c chrome
+#kill $(kill -e | grep "google-chrome") 
+#killall google-chrome 
 
-python3 /home/nemesis/Desktop/code/automation/test/login.py #/home/nemesis/Desktop/code/automation/test/websites.txt
+python3 /home/nemesis/Desktop/code/test/login.py
 
 #exit 0
 #return echo $?
