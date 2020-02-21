@@ -1,6 +1,12 @@
 import webbrowser
 import sys
+import time
+from time import sleep
 import datetime
+
+x = datetime.datetime.now()
+print(x)
+
 
 def main():
   print('Opening Websites')
@@ -20,7 +26,7 @@ def main():
     try:
       for num, url in enumerate(fobj):
         wbbrowser.open_new_tab(url.strip())
-        time.sleep(1)
+        sleep(1)
     except Exception as e:
       print(e)
 
